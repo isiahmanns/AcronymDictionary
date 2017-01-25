@@ -33,6 +33,9 @@
 		8463ED181E381D7000FBB698 /* DefinitionTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8463ED161E381D7000FBB698 /* DefinitionTableViewCell.m */; };
 		8463ED191E381D7000FBB698 /* DefinitionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8463ED171E381D7000FBB698 /* DefinitionTableViewCell.xib */; };
 		8C460313046912DA376F4F86 /* libPods-AcronymDictionaryUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F161224BD324452A7480E8C7 /* libPods-AcronymDictionaryUITests.a */; };
+		E90998321E38D56000C44192 /* CachedAcromineController.m in Sources */ = {isa = PBXBuildFile; fileRef = E90998311E38D56000C44192 /* CachedAcromineController.m */; };
+		E90998331E38D56000C44192 /* CachedAcromineController.m in Sources */ = {isa = PBXBuildFile; fileRef = E90998311E38D56000C44192 /* CachedAcromineController.m */; };
+		E90998341E38D56000C44192 /* CachedAcromineController.m in Sources */ = {isa = PBXBuildFile; fileRef = E90998311E38D56000C44192 /* CachedAcromineController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -91,6 +94,8 @@
 		8CDD8BC7247A39700C57E866 /* Pods-AcronymDictionary.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AcronymDictionary.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AcronymDictionary/Pods-AcronymDictionary.debug.xcconfig"; sourceTree = "<group>"; };
 		985765E82F854D6305E2D871 /* libPods-AcronymDictionaryTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AcronymDictionaryTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2944A00103076CE5F9ED59E /* Pods-AcronymDictionaryUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AcronymDictionaryUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AcronymDictionaryUITests/Pods-AcronymDictionaryUITests.release.xcconfig"; sourceTree = "<group>"; };
+		E90998301E38D56000C44192 /* CachedAcromineController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CachedAcromineController.h; sourceTree = "<group>"; };
+		E90998311E38D56000C44192 /* CachedAcromineController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CachedAcromineController.m; sourceTree = "<group>"; };
 		F161224BD324452A7480E8C7 /* libPods-AcronymDictionaryUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AcronymDictionaryUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -200,6 +205,8 @@
 			children = (
 				8463ECF61E37FBB500FBB698 /* Acromine.h */,
 				8463ECF71E37FBB500FBB698 /* Acromine.m */,
+				E90998301E38D56000C44192 /* CachedAcromineController.h */,
+				E90998311E38D56000C44192 /* CachedAcromineController.m */,
 				8463ED031E38017C00FBB698 /* Models */,
 			);
 			path = Acromine;
@@ -524,6 +531,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8463ED141E38182600FBB698 /* SearchTableViewController+UISearchBarDelegate.m in Sources */,
+				E90998321E38D56000C44192 /* CachedAcromineController.m in Sources */,
 				8463ED111E38143E00FBB698 /* SearchTableViewController.m in Sources */,
 				8463ECFE1E37FC3600FBB698 /* Constants.m in Sources */,
 				8463ED061E3801B700FBB698 /* AcronymDefinitions.m in Sources */,
@@ -540,6 +548,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8463ED071E3801B700FBB698 /* AcronymDefinitions.m in Sources */,
+				E90998331E38D56000C44192 /* CachedAcromineController.m in Sources */,
 				8463ECF91E37FBB500FBB698 /* Acromine.m in Sources */,
 				8463ECFF1E37FC3600FBB698 /* Constants.m in Sources */,
 				8463ED0C1E3801CF00FBB698 /* AcronymDefinition.m in Sources */,
@@ -552,6 +561,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8463ED081E3801B700FBB698 /* AcronymDefinitions.m in Sources */,
+				E90998341E38D56000C44192 /* CachedAcromineController.m in Sources */,
 				8463ECE91E37F9CC00FBB698 /* AcronymDictionaryUITests.m in Sources */,
 				8463ECFA1E37FBB500FBB698 /* Acromine.m in Sources */,
 				8463ED0D1E3801CF00FBB698 /* AcronymDefinition.m in Sources */,

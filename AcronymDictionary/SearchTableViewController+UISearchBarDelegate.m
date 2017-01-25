@@ -18,23 +18,7 @@
         return;
     }
     
-    [MBProgressHUD showHUDAddedTo:self.view animated:YES];
-    
-    //
-    // @TODO BAD
-    //
-    
-    [Acromine definitionsFor:searchText completion:^(AcronymDefinitions* def) {
-        
-        if([searchText isEqualToString:def.sf]){
-            [self updateDefinitions:def];
-        }
-        
-        dispatch_async(dispatch_get_main_queue(), ^{
-            [self.tableView reloadData];
-            [MBProgressHUD hideHUDForView:self.view animated:YES];
-        });
-    }];
+    [self.cachedAcromine search:searchText];
 }
 
 @end

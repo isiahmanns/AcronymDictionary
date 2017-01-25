@@ -12,7 +12,7 @@
 
 @interface Acromine : NSObject
 
-+ (void)definitionsFor:(NSString*)acronym
-            completion:(void(^)(AcronymDefinitions*))completion;
++ (NSURLSessionDataTask*)definitionsFor:(NSString*)acronym
+                             completion:(void(^)(AcronymDefinitions*))completion;
 
 @end

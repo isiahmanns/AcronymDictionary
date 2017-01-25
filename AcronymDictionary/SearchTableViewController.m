@@ -9,11 +9,13 @@
 #import "SearchTableViewController.h"
 #import "AcronymDefinitions.h"
 #import "DefinitionTableViewCell.h"
+#import "MBProgressHUD/MBProgressHUD.h"
 
 @interface SearchTableViewController ()
 
 @property (strong, nonatomic) UISearchBar *searchBar;
-@property (strong, atomic) AcronymDefinitions* definitions;
+@property (strong, nonatomic) AcronymDefinitions* definitions;
+@property (strong, nonatomic) MBProgressHUD* hud;
 
 @end
 
@@ -24,6 +26,7 @@
     
     self.definesPresentationContext = YES;
     
+    // Search bar setup
     self.searchBar = [[UISearchBar alloc] init];
     self.searchBar.delegate = self;
     self.searchBar.prompt = @"Enter an acronym, eg. CPU";
@@ -33,17 +36,25 @@
     self.searchBar.autocorrectionType = UITextAutocorrectionTypeNo;
     self.searchBar.keyboardType = UIKeyboardTypeAlphabet;
     
-    //self.tableView.tableHeaderView = self.searchController.searchBar;
     self.tableView.tableHeaderView = self.searchBar;
     self.tableView.rowHeight = 60.0;
     
     [self.tableView registerNib:[UINib nibWithNibName:@"DefinitionTableViewCell" bundle:nil]
          forCellReuseIdentifier:@"definition-cell"];
+    
+    self.cachedAcromine = [[CachedAcromineController alloc] init];
+    self.cachedAcromine.delegate = self;
+    
+    self.hud = [[MBProgressHUD alloc] initWithView:self.view];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    
+    // Clear the cache to make space for memory!
+    if(self.cachedAcromine){
+        [self.cachedAcromine dumpCache];
+    }
 }
 
 #pragma mark - Table view data source
@@ -68,9 +79,18 @@
     return cell;
 }
 
-- (void)updateDefinitions:(AcronymDefinitions*)definitions
+#pragma mark - AcromineControllerDelegate protocol implementation
+
+- (void)searchEnded:(AcronymDefinitions *)definitions
 {
     self.definitions = definitions;
+    [self.tableView reloadData];
+    [self.hud hideAnimated:YES];
+}
+
+- (void)searchBegan
+{
+    [self.hud showAnimated:YES];
 }
 
 @end

@@ -9,9 +9,10 @@
 @import UIKit;
 
 #import "AcronymDefinitions.h"
+#import "CachedAcromineController.h"
 
-@interface SearchTableViewController : UITableViewController
+@interface SearchTableViewController : UITableViewController <CachedAcromineDelegate>
 
-- (void)updateDefinitions:(AcronymDefinitions*)definitions;
+@property (strong, nonatomic) CachedAcromineController* cachedAcromine;
 
 @end

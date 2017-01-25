@@ -11,12 +11,12 @@
 
 @implementation Acromine
 
-+ (void)definitionsFor:(NSString*)acronym
-            completion:(void(^)(AcronymDefinitions*))completion
++ (NSURLSessionDataTask*)definitionsFor:(NSString*)acronym
+                             completion:(void(^)(AcronymDefinitions*))completion
 {
     if(!acronym){
         completion(nil);
-        return;
+        return nil;
     }
     
     NSURLSessionConfiguration *configuration = [NSURLSessionConfiguration defaultSessionConfiguration];
@@ -34,7 +34,7 @@
     serializer.acceptableContentTypes = [NSSet setWithObjects:@"text/plain", @"application/json", nil];
     manager.responseSerializer = serializer;
     
-    NSURLSessionDataTask *dataTask = [manager dataTaskWithRequest:request
+    return [manager dataTaskWithRequest:request
                                                 completionHandler:^(NSURLResponse *response, id responseObject, NSError *error) {
         if(error){
             NSLog(@"Error: %@", error);
@@ -72,7 +72,6 @@
                                                     
         completion([[AcronymDefinitions alloc] initWithResponse:definitionsDict]);
     }];
-    [dataTask resume];
 }
 
 @end
