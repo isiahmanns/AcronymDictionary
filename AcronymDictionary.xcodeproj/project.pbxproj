@@ -14,39 +14,25 @@
 		8463ECCE1E37F9CC00FBB698 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8463ECCC1E37F9CC00FBB698 /* Main.storyboard */; };
 		8463ECD01E37F9CC00FBB698 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8463ECCF1E37F9CC00FBB698 /* Assets.xcassets */; };
 		8463ECD31E37F9CC00FBB698 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8463ECD11E37F9CC00FBB698 /* LaunchScreen.storyboard */; };
-		8463ECE91E37F9CC00FBB698 /* AcronymDictionaryUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8463ECE81E37F9CC00FBB698 /* AcronymDictionaryUITests.m */; };
 		8463ECF81E37FBB500FBB698 /* Acromine.m in Sources */ = {isa = PBXBuildFile; fileRef = 8463ECF71E37FBB500FBB698 /* Acromine.m */; };
 		8463ECF91E37FBB500FBB698 /* Acromine.m in Sources */ = {isa = PBXBuildFile; fileRef = 8463ECF71E37FBB500FBB698 /* Acromine.m */; };
-		8463ECFA1E37FBB500FBB698 /* Acromine.m in Sources */ = {isa = PBXBuildFile; fileRef = 8463ECF71E37FBB500FBB698 /* Acromine.m */; };
 		8463ECFE1E37FC3600FBB698 /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = 8463ECFD1E37FC3600FBB698 /* Constants.m */; };
 		8463ECFF1E37FC3600FBB698 /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = 8463ECFD1E37FC3600FBB698 /* Constants.m */; };
-		8463ED001E37FC3600FBB698 /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = 8463ECFD1E37FC3600FBB698 /* Constants.m */; };
 		8463ED021E37FD0500FBB698 /* AcromineTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8463ED011E37FD0500FBB698 /* AcromineTests.m */; };
 		8463ED061E3801B700FBB698 /* AcronymDefinitions.m in Sources */ = {isa = PBXBuildFile; fileRef = 8463ED051E3801B700FBB698 /* AcronymDefinitions.m */; };
 		8463ED071E3801B700FBB698 /* AcronymDefinitions.m in Sources */ = {isa = PBXBuildFile; fileRef = 8463ED051E3801B700FBB698 /* AcronymDefinitions.m */; };
-		8463ED081E3801B700FBB698 /* AcronymDefinitions.m in Sources */ = {isa = PBXBuildFile; fileRef = 8463ED051E3801B700FBB698 /* AcronymDefinitions.m */; };
 		8463ED0B1E3801CF00FBB698 /* AcronymDefinition.m in Sources */ = {isa = PBXBuildFile; fileRef = 8463ED0A1E3801CF00FBB698 /* AcronymDefinition.m */; };
 		8463ED0C1E3801CF00FBB698 /* AcronymDefinition.m in Sources */ = {isa = PBXBuildFile; fileRef = 8463ED0A1E3801CF00FBB698 /* AcronymDefinition.m */; };
-		8463ED0D1E3801CF00FBB698 /* AcronymDefinition.m in Sources */ = {isa = PBXBuildFile; fileRef = 8463ED0A1E3801CF00FBB698 /* AcronymDefinition.m */; };
 		8463ED111E38143E00FBB698 /* SearchTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8463ED101E38143E00FBB698 /* SearchTableViewController.m */; };
 		8463ED141E38182600FBB698 /* SearchTableViewController+UISearchBarDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8463ED131E38182600FBB698 /* SearchTableViewController+UISearchBarDelegate.m */; };
 		8463ED181E381D7000FBB698 /* DefinitionTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8463ED161E381D7000FBB698 /* DefinitionTableViewCell.m */; };
 		8463ED191E381D7000FBB698 /* DefinitionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8463ED171E381D7000FBB698 /* DefinitionTableViewCell.xib */; };
-		8C460313046912DA376F4F86 /* libPods-AcronymDictionaryUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F161224BD324452A7480E8C7 /* libPods-AcronymDictionaryUITests.a */; };
 		E90998321E38D56000C44192 /* CachedAcromineController.m in Sources */ = {isa = PBXBuildFile; fileRef = E90998311E38D56000C44192 /* CachedAcromineController.m */; };
 		E90998331E38D56000C44192 /* CachedAcromineController.m in Sources */ = {isa = PBXBuildFile; fileRef = E90998311E38D56000C44192 /* CachedAcromineController.m */; };
-		E90998341E38D56000C44192 /* CachedAcromineController.m in Sources */ = {isa = PBXBuildFile; fileRef = E90998311E38D56000C44192 /* CachedAcromineController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		8463ECDA1E37F9CC00FBB698 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 8463ECB81E37F9CB00FBB698 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 8463ECBF1E37F9CB00FBB698;
-			remoteInfo = AcronymDictionary;
-		};
-		8463ECE51E37F9CC00FBB698 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 8463ECB81E37F9CB00FBB698 /* Project object */;
 			proxyType = 1;
@@ -71,9 +57,6 @@
 		8463ECD41E37F9CC00FBB698 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8463ECD91E37F9CC00FBB698 /* AcronymDictionaryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AcronymDictionaryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8463ECDF1E37F9CC00FBB698 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8463ECE41E37F9CC00FBB698 /* AcronymDictionaryUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AcronymDictionaryUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		8463ECE81E37F9CC00FBB698 /* AcronymDictionaryUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AcronymDictionaryUITests.m; sourceTree = "<group>"; };
-		8463ECEA1E37F9CC00FBB698 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8463ECF61E37FBB500FBB698 /* Acromine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Acromine.h; sourceTree = "<group>"; };
 		8463ECF71E37FBB500FBB698 /* Acromine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Acromine.m; sourceTree = "<group>"; };
 		8463ECFC1E37FC3600FBB698 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
@@ -116,14 +99,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8463ECE11E37F9CC00FBB698 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				8C460313046912DA376F4F86 /* libPods-AcronymDictionaryUITests.a in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -132,7 +107,6 @@
 			children = (
 				8463ECC21E37F9CC00FBB698 /* AcronymDictionary */,
 				8463ECDC1E37F9CC00FBB698 /* AcronymDictionaryTests */,
-				8463ECE71E37F9CC00FBB698 /* AcronymDictionaryUITests */,
 				8463ECC11E37F9CC00FBB698 /* Products */,
 				CBC603B610D94D486A0C63C5 /* Pods */,
 				CABC7D174BA61590FBC4B9CE /* Frameworks */,
@@ -144,7 +118,6 @@
 			children = (
 				8463ECC01E37F9CC00FBB698 /* AcronymDictionary.app */,
 				8463ECD91E37F9CC00FBB698 /* AcronymDictionaryTests.xctest */,
-				8463ECE41E37F9CC00FBB698 /* AcronymDictionaryUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -189,15 +162,6 @@
 				8463ECDF1E37F9CC00FBB698 /* Info.plist */,
 			);
 			path = AcronymDictionaryTests;
-			sourceTree = "<group>";
-		};
-		8463ECE71E37F9CC00FBB698 /* AcronymDictionaryUITests */ = {
-			isa = PBXGroup;
-			children = (
-				8463ECE81E37F9CC00FBB698 /* AcronymDictionaryUITests.m */,
-				8463ECEA1E37F9CC00FBB698 /* Info.plist */,
-			);
-			path = AcronymDictionaryUITests;
 			sourceTree = "<group>";
 		};
 		8463ECFB1E37FC0100FBB698 /* Acromine */ = {
@@ -290,27 +254,6 @@
 			productReference = 8463ECD91E37F9CC00FBB698 /* AcronymDictionaryTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		8463ECE31E37F9CC00FBB698 /* AcronymDictionaryUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 8463ECF31E37F9CC00FBB698 /* Build configuration list for PBXNativeTarget "AcronymDictionaryUITests" */;
-			buildPhases = (
-				2D10B70B72B66258E0B3AE84 /* [CP] Check Pods Manifest.lock */,
-				8463ECE01E37F9CC00FBB698 /* Sources */,
-				8463ECE11E37F9CC00FBB698 /* Frameworks */,
-				8463ECE21E37F9CC00FBB698 /* Resources */,
-				A3E81CF6688738E5AC00363F /* [CP] Embed Pods Frameworks */,
-				849445D5E46AEE0EC8C554FC /* [CP] Copy Pods Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				8463ECE61E37F9CC00FBB698 /* PBXTargetDependency */,
-			);
-			name = AcronymDictionaryUITests;
-			productName = AcronymDictionaryUITests;
-			productReference = 8463ECE41E37F9CC00FBB698 /* AcronymDictionaryUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -326,12 +269,6 @@
 						ProvisioningStyle = Automatic;
 					};
 					8463ECD81E37F9CC00FBB698 = {
-						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = E77U6KY6KJ;
-						ProvisioningStyle = Automatic;
-						TestTargetID = 8463ECBF1E37F9CB00FBB698;
-					};
-					8463ECE31E37F9CC00FBB698 = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = E77U6KY6KJ;
 						ProvisioningStyle = Automatic;
@@ -354,7 +291,6 @@
 			targets = (
 				8463ECBF1E37F9CB00FBB698 /* AcronymDictionary */,
 				8463ECD81E37F9CC00FBB698 /* AcronymDictionaryTests */,
-				8463ECE31E37F9CC00FBB698 /* AcronymDictionaryUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -378,13 +314,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8463ECE21E37F9CC00FBB698 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
@@ -401,36 +330,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AcronymDictionary/Pods-AcronymDictionary-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		2D10B70B72B66258E0B3AE84 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		849445D5E46AEE0EC8C554FC /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AcronymDictionaryUITests/Pods-AcronymDictionaryUITests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		9BCF43388109EB0C6B714A8D /* [CP] Copy Pods Resources */ = {
@@ -461,21 +360,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		A3E81CF6688738E5AC00363F /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AcronymDictionaryUITests/Pods-AcronymDictionaryUITests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		B85DDD51312E7AB54C835B48 /* [CP] Embed Pods Frameworks */ = {
@@ -556,19 +440,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8463ECE01E37F9CC00FBB698 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				8463ED081E3801B700FBB698 /* AcronymDefinitions.m in Sources */,
-				E90998341E38D56000C44192 /* CachedAcromineController.m in Sources */,
-				8463ECE91E37F9CC00FBB698 /* AcronymDictionaryUITests.m in Sources */,
-				8463ECFA1E37FBB500FBB698 /* Acromine.m in Sources */,
-				8463ED0D1E3801CF00FBB698 /* AcronymDefinition.m in Sources */,
-				8463ED001E37FC3600FBB698 /* Constants.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -576,11 +447,6 @@
 			isa = PBXTargetDependency;
 			target = 8463ECBF1E37F9CB00FBB698 /* AcronymDictionary */;
 			targetProxy = 8463ECDA1E37F9CC00FBB698 /* PBXContainerItemProxy */;
-		};
-		8463ECE61E37F9CC00FBB698 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 8463ECBF1E37F9CB00FBB698 /* AcronymDictionary */;
-			targetProxy = 8463ECE51E37F9CC00FBB698 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -752,34 +618,6 @@
 			};
 			name = Release;
 		};
-		8463ECF41E37F9CC00FBB698 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6F4F37D8442B6435AD79FF35 /* Pods-AcronymDictionaryUITests.debug.xcconfig */;
-			buildSettings = {
-				DEVELOPMENT_TEAM = E77U6KY6KJ;
-				GCC_PREFIX_HEADER = AcronymDictionary/PrefixHeader.pch;
-				INFOPLIST_FILE = AcronymDictionaryUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.tlextrait.AcronymDictionaryUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_TARGET_NAME = AcronymDictionary;
-			};
-			name = Debug;
-		};
-		8463ECF51E37F9CC00FBB698 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = C2944A00103076CE5F9ED59E /* Pods-AcronymDictionaryUITests.release.xcconfig */;
-			buildSettings = {
-				DEVELOPMENT_TEAM = E77U6KY6KJ;
-				GCC_PREFIX_HEADER = AcronymDictionary/PrefixHeader.pch;
-				INFOPLIST_FILE = AcronymDictionaryUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.tlextrait.AcronymDictionaryUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_TARGET_NAME = AcronymDictionary;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -806,15 +644,6 @@
 			buildConfigurations = (
 				8463ECF11E37F9CC00FBB698 /* Debug */,
 				8463ECF21E37F9CC00FBB698 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		8463ECF31E37F9CC00FBB698 /* Build configuration list for PBXNativeTarget "AcronymDictionaryUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				8463ECF41E37F9CC00FBB698 /* Debug */,
-				8463ECF51E37F9CC00FBB698 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
