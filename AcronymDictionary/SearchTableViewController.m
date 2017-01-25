@@ -35,6 +35,7 @@
     
     //self.tableView.tableHeaderView = self.searchController.searchBar;
     self.tableView.tableHeaderView = self.searchBar;
+    self.tableView.rowHeight = 60.0;
     
     [self.tableView registerNib:[UINib nibWithNibName:@"DefinitionTableViewCell" bundle:nil]
          forCellReuseIdentifier:@"definition-cell"];
