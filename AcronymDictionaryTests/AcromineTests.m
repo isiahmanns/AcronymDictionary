@@ -15,7 +15,7 @@
 @end
 
 // Timeout we expect for endpoints
-NSTimeInterval expectedTimeout = 10.0;
+NSTimeInterval expectedTimeout = 15.0;
 
 @implementation AcromineTests
 
@@ -34,7 +34,7 @@ NSTimeInterval expectedTimeout = 10.0;
     
     NSString* search = @"CPU";
     
-    [Acromine definitionsFor:search completion:^(AcronymDefinitions* definitions) {
+    NSURLSessionDataTask* task = [Acromine definitionsFor:search completion:^(AcronymDefinitions* definitions) {
         
         // Response and its properties shouldn't be nil
         XCTAssertNotNil(definitions);
@@ -56,6 +56,7 @@ NSTimeInterval expectedTimeout = 10.0;
         
         [expectation fulfill];
     }];
+    [task resume];
     
     [self waitForExpectationsWithTimeout:expectedTimeout handler:^(NSError* error) {
         XCTAssertNil(error);
@@ -67,7 +68,7 @@ NSTimeInterval expectedTimeout = 10.0;
     
     NSString* search = @"Apple Sauce";
     
-    [Acromine definitionsFor:search completion:^(AcronymDefinitions* definitions) {
+    NSURLSessionDataTask* task = [Acromine definitionsFor:search completion:^(AcronymDefinitions* definitions) {
         
         // Response and its properties shouldn't be nil
         XCTAssertNotNil(definitions);
@@ -81,6 +82,7 @@ NSTimeInterval expectedTimeout = 10.0;
         
         [expectation fulfill];
     }];
+    [task resume];
     
     [self waitForExpectationsWithTimeout:expectedTimeout handler:^(NSError* error) {
         XCTAssertNil(error);
