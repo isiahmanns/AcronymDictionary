@@ -39,7 +39,13 @@
             }
         }
         
-        self.lfs = definitions;
+        // Sort definition by # of years, descending
+        NSSortDescriptor *sortDescriptor;
+        sortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"age"
+                                                     ascending:NO];
+        NSArray *sortedDefinitions = [definitions sortedArrayUsingDescriptors:@[sortDescriptor]];
+        
+        self.lfs = sortedDefinitions;
     }
     return self;
 }
