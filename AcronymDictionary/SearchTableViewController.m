@@ -46,6 +46,12 @@
     self.cachedAcromine.delegate = self;
     
     self.hud = [[MBProgressHUD alloc] initWithView:self.view];
+    
+    
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"About"
+                                                                              style:UIBarButtonItemStylePlain
+                                                                             target:self
+                                                                             action:@selector(showAboutAlert)];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -55,6 +61,33 @@
     if(self.cachedAcromine){
         [self.cachedAcromine dumpCache];
     }
+}
+
+- (void)showAboutAlert
+{
+    NSLog(@"'About' button clicked.");
+    
+    /*[self.navigationController pushViewController:[UIAlertController alertControllerWithTitle:@"About Acromine"
+                                                                                      message:@"asdfasdfasf"
+                                                                               preferredStyle:UIAlertControllerStyleAlert]
+                                         animated:NO];
+     */
+    
+    NSString *blurb = @"Acromine is an app that takes in any sequence of intials and uses the Acromine API to fetch acronyms that your abbreviation could represent from the MEDLINE database.";
+    
+    UIAlertController *alertView = [UIAlertController alertControllerWithTitle:@"About Acromine"
+                                                                       message:blurb
+                                                                preferredStyle:UIAlertControllerStyleAlert];
+    
+    [alertView addAction:[UIAlertAction actionWithTitle:@"Close"
+                                                  style:UIAlertActionStyleDefault handler:^void (UIAlertAction *action){
+                                                      [self dismissViewControllerAnimated:YES
+                                                                               completion:NULL];
+                                                  }]];
+    
+    [self presentViewController:alertView
+                       animated:YES
+                     completion:NULL];
 }
 
 #pragma mark - Table view data source
