@@ -79,6 +79,25 @@
     return cell;
 }
 
+
+#pragma mark - UITableViewDelegate protocol
+//inherited from UITableViewController (could put this into a cateogory)
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    NSString *data = [(DefinitionTableViewCell*)[self.tableView cellForRowAtIndexPath:indexPath] definitionLabel].text;
+    NSLog(@"%@", data);
+    
+    NSString *search_url = [[NSString stringWithFormat:@"http://www.google.com/search?q=%@", data] stringByReplacingOccurrencesOfString:@" " withString:@"+"];
+
+    NSLog(@"%@", search_url);
+    
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:search_url]
+                                       options:@{}
+                             completionHandler:^void(BOOL success) {
+                                 NSLog(@"Opened URL?: %d", success);
+                             }];
+}
+
 #pragma mark - AcromineControllerDelegate protocol implementation
 
 - (void)searchEnded:(AcronymDefinitions *)definitions
@@ -92,5 +111,6 @@
 {
     [self.hud showAnimated:YES];
 }
+
 
 @end
