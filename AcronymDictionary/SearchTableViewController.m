@@ -31,10 +31,15 @@
     self.searchBar.delegate = self;
     self.searchBar.prompt = @"Enter an acronym, eg. CPU";
     self.searchBar.translucent = NO;
-    [self.searchBar sizeToFit];
+    //[self.searchBar sizeToFit];
     self.searchBar.autocapitalizationType = UITextAutocapitalizationTypeAllCharacters;
     self.searchBar.autocorrectionType = UITextAutocorrectionTypeNo;
     self.searchBar.keyboardType = UIKeyboardTypeAlphabet;
+    
+    CGRect newFrame = self.view.frame;
+    newFrame.size.width = self.view.frame.size.width;
+    newFrame.size.height = 95;
+    [self.searchBar setFrame:newFrame];
     
     self.tableView.tableHeaderView = self.searchBar;
     self.tableView.rowHeight = 60.0;
